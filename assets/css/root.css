@@ -1,0 +1,13 @@
+:root{
+    --interactive: #5BC8AF;
+    --tipBackground: #297C6B;
+    --background: #194D44;
+    --mainText: #333;
+    --faded: #EAEAEA
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf),
+            url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
