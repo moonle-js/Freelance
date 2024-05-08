@@ -147,3 +147,4 @@ swiperightButton.addEventListener('click', function(){
     })
     activeButtons[count].classList.add('activeDiv')
 })
+
