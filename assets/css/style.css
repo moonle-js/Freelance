@@ -481,11 +481,13 @@ header{
     display: flex;
     justify-content: center;
     background: #fff;
-    min-height: 1200px;
+    min-height: 800px;
+    margin-bottom: 100px;
     width: 100%;
 }
     .main_organize{
         width: 90%;
+        height: 100%;
         position: relative;
     }
         .organize_upper{
@@ -570,13 +572,13 @@ header{
 /* orginize everything */
 
 .organize_down{
-    margin-top: 400px;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 400px;
+    min-height: 500px;
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
     .down_heading{
         display: flex;
@@ -602,6 +604,9 @@ header{
             height: 2px;
             background: #eaeaea;
         }
+.button:hover{
+    color: var(--interactive);
+}
 .texts{
     display: flex;
     justify-content: space-between;
@@ -609,7 +614,6 @@ header{
     font-size: 14px;
     line-height: 24px;
     width: 100%;
-    height: 200px;
 }
     .texts div{
         text-align: justify;
@@ -682,9 +686,6 @@ header{
             }
 
 @media screen and (max-width: 768px){
-    .texts{
-        margin-bottom: 250px;
-    }
         .down_heading .xett{
             width: 5%;
         }
@@ -706,6 +707,13 @@ header{
             padding: 10px 10px 10px 10px !important;
             width: 60%;
         }
+
+        .button{
+            width: 45%;
+        }
+        .button p{
+            text-align: center;
+        }
             .swiper_main img{
                 top: 20px !important;
                 right: 30px !important;
@@ -721,3 +729,109 @@ header{
             height: 195px !important;
         }
 }
+
+.videoSec{
+    width: 100%;
+    height: 650px;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .videoSec .leftSide{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 20px;
+    }
+        .videoSec .leftSide h6{
+            font-size: 44px;
+            color: #fff;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+            .videoSec .leftSide h6 span{
+                -webkit-text-stroke: 1px #fff;
+                -webkit-text-fill-color: transparent;
+                font-family: sans-serif;
+            }
+
+    
+    .leftSide div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 25px;
+        width: 100%;
+    }
+        .leftSide div img{
+            width: 17px;
+            height: 13px;
+        }
+        .leftSide div .video_texts{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #fff;
+            font-size: 18px;
+            line-height: 28px;
+            width: 85%;
+            font-weight: 400;
+        }
+        .leftSide div p{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+
+
+
+
+
+
+    .videoSec .rightSide{
+        width: 45%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        height: 100%;
+    }
+        .play_btn{
+            width: 208px;
+            height: 208px;
+            border-radius: 100%;
+            background: var(--interactive);
+            opacity: .1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border: 2px solid #fff;
+        }
+        .rightSide button{
+            position: absolute;
+            box-shadow: none;
+            outline: none;
+            background-color: var(--interactive);
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rightSide button img{
+            background: var(--interactive);
+            background-clip: content-box;
+            border: none;
+            outline: none;
+            text-decoration: none;
+        }
