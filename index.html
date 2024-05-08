@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/javascripts/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,26 +25,239 @@
                 <li class="nav_elements">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a class="home" href="#">Home</a>
                         </li>
-                        <li>
+                        <li class="about">
                             <a href="#">About</a>
                         </li>
-                        <li class="contact">
-                            <a href="#">contact</a>
-                        </li>
-                        <li class="callUs">
-                            <span class="text">Call now for a consult </span><a href="tel:123.456.7890">123.456.7890</a>
+                        <li class="contact_li">
+                            <a class="contact" href="#">contact</a>
                         </li>
                     </ul>
                 </li>
+
+                <li class="callUs">
+                    <span class="text">Call now for a consult</span>
+                    <a href="tel:123.456.7890"> 123.456.7890</a>
+                </li>
+
+                <ul id="hamburger">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="sec_1">
-            
+            <div class="sec1Div">
+                <article>
+                    <h1>
+                        <span>get an</span> intervention
+                    </h1>
+                    <p>
+                        Showing greater respect to older adults can be done in several ways : 
+                        acknowledging and putting to use the talents and skills of older adults; creating 
+                        intergenerational initiatives; and allowing older adults to stay active and independent 
+                        for as long as possible.
+                    </p>
+                </article>
+    
+                <form>
+                    <h2>
+                        Contact Us
+                    </h2>
+                    <div class="inputs">
+                        <div>
+                            <span>First Name</span>
+                            <input type="text" name="firstName" id="firstName" placeholder="FirstName">
+                        </div>
+
+                        <div>
+                            <span>Last Name</span>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        </div>
+
+                        <div>
+                            <span>Business Email</span>
+                            <input type="email" name="email" id="email" placeholder="Business Email">
+                        </div>
+
+                        <div>
+                            <span>Company</span>
+                            <input type="text" name="company" id="company" placeholder="Company">
+                        </div>
+                        <select name="country" id="country">
+                            <option>Azerbaijan</option>
+                        </select>
+                    </div>
+                    <button>
+                        <img src="./assets/images/ox.png" alt="">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+            <div id="bottomSec"></div>
+        </section>
+
+
+        <section class="weUnderstand">
+            <div class="mainContainer">
+                <div class="upperSide">
+                    <img src="/assets/images/understand1.png" alt="">
+                    <img src="/assets/images/understand2.png" alt="">
+                    <img src="/assets/images/understand3.png" alt="">
+                </div>
+
+                <div class="middleSide">
+                    <h3>
+                        <span>We</span> Understand
+                    </h3>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div class="bottomSide">
+                    <div>
+                        <p>
+                            Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.
+                        </p>
+                    </div>
+
+                    <div class="thirdText">
+                        <p>
+                            To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships
+                        </p>
+                        <button>92% Success Rate &#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="organize">
+            <div class="main_organize">
+                <div class="organize_upper">
+                    <div class="swipe_left">
+                        <img src="./assets/images/swipe_left.svg" alt="">
+                    </div>
+
+
+
+                    <div class="swiper_main">
+                        <div class="swiper_elements">
+                            
+                        </div>
+                        
+                        <div class="swiper_nav">
+                            <div class="activeDiv"></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swipe_right">
+                        <img src="./assets/images/swipe_right.png" alt="">
+                    </div>
+                </div>
+
+
+                <!--  -->
+                <div class="organize_down">
+
+                    <div class="down_heading">
+                        <h5>
+                            <span>We </span>can organize ecerything
+                        </h5>
+
+                        <div class="xett">
+
+                        </div>
+                    </div>
+
+                    <div class="texts">
+                        <div>
+                            <span>Interventions</span>  should focus on older adult’s desire for connectedness, participation and independence.
+                        </div>
+                        <div>
+                            Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.
+                        </div>
+                        <div>
+                            The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings. 
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <p>
+
+                            </p>
+                            <div class="button_info">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
