@@ -71,8 +71,6 @@ var styles = {
     height:"100%",
     maxWidth: "250px",
     maxHeight: "250px",
-    minWidth: "250px",
-    minHeight: "250px",
     width: '30%',
     borderTopLeftRadius: `4px`,
     borderBottomLeftRadius: `4px`,

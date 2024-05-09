@@ -392,7 +392,13 @@ header{
                 color: var(--interactive);
                 font-size: 18px;
                 font-weight: 700;
+                transition: .4s all ease;
                 cursor: pointer;
+                
+            }
+            .thirdText button:hover{
+                transform: translateY(-2px);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
 
 @media screen and (max-width: 768px){
@@ -434,7 +440,7 @@ header{
     }
         .organize_upper{
             width: 100%;
-            height: 270px;
+            min-height: 270px;
             top: -100px;
             position: absolute;
 
@@ -954,16 +960,34 @@ footer{
         display: none !important;
     }
     
+    form{
+        flex-direction: column;
+        height: 500px !important;
+    }
+        form h2{
+            height: 15%;
+        }
+        form .inputs{
+            height: 80%;
+        }
+        form button{
+            margin-bottom: 40px;
+        }
+    .inputs div{
+        width: 100%;
+    }
+    .inputs input,
+    .inputs select{
+        width: 100% !important;
+    }
     
     .weUnderstand .mainContainer .upperSide{
         display: none;
     }
     .weUnderstand .mainContainer .middleSide{
-        border: 2px solid orange;
         margin-bottom: 30px;
     }
     .weUnderstand .mainContainer .bottomSide div{
-        border: 2px solid green;
         margin-bottom: 10px;
         margin-top: 10px;
         width: 100%;
@@ -972,6 +996,16 @@ footer{
         order: 3;
     }
 
+    .weUnderstand{
+        margin-bottom: 100px;
+    }
+    .buttons .button{
+        width: 100%;
+    }
+
+.sec1Div article h1 span{
+    font-size: 36px;
+}
     .texts{
         flex-direction: column;
     }
@@ -983,4 +1017,27 @@ footer{
      .texts div:nth-child(3){
         margin-bottom: 40px;
      }
+
+.organize_down{
+    margin-top: 500px;
+}
+    .swiper_elements{
+        position: relative;
+    }
+        .swiper_elements .image{
+            position: absolute;
+            z-index: 20;
+            top: -15%;
+            left: 5%;
+            max-width: 180px !important;
+            max-height: 180px !important;
+        }
+        .swiper_elements article{
+            z-index: 19;
+            padding-top: 160px !important;
+            border-radius: 4px;
+            width: 100% !important;
+            height: 400px !important;
+            min-height: 400px;
+        }
 }
