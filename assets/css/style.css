@@ -111,64 +111,7 @@ header{
 @media screen and (max-width: 360px){
     
     
-    nav ul{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        position: relative;
-    }
-
-    .logo_side{
-        width: 80% !important;
-        min-width: 300px;
-        justify-content: flex-start !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-    }
-        .nav_elements{
-            width: 100% !important;
-        }
-            .nav_elements ul{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                margin-left: 0;
-            }
-            .callUs{
-                flex-direction: column;
-                width: 100% !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-width: 10px;
-            }
-        #hamburger{
-            position: absolute;
-            display: flex;
-            width: 20px;
-            height: 12;
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 5px;
-            cursor: pointer;
-            right: 0;
-            border: none;
-        }
-            #hamburger li{
-                width: 100%;
-                height: 2px;
-                background: #fff;
-            }
     
-    .nav_elements{
-        display: none;
-    }
-    .callUs{
-        display: none;
-    }
 
 }
 
@@ -408,7 +351,6 @@ header{
                 text-transform: uppercase;
             }
             .middleSide div{
-                min-width: 800px;
                 width: 70%;
                 height: 2px;
                 background: #EAEAEA;
@@ -689,7 +631,45 @@ header{
         .down_heading .xett{
             width: 5%;
         }
-    
+
+        .videoSec{
+            flex-direction: column;
+            height: 900px !important;
+        }
+        .videoSec .leftSide{
+            width: 100% !important;
+            background: #18423b !important;
+        }
+            .videoSec .leftSide h6{
+                text-align: center;
+            }
+            .videoSec .leftSide div span{
+                font-size: 14px;
+            }
+        
+        .videoSec .rightSide{
+            width: 100% !important;
+        }
+
+        .s760VideoBack{
+            display: flex;
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            height: 390px;
+            z-index: 2;
+            background: url(../images/760VideoBack.png);
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        .columnGreen,
+        .videoColumn{
+            display: none;
+        }
+
+
         .swipe_left,
         .swipe_right{
             display: none;
@@ -820,6 +800,10 @@ header{
             align-items: center;
             position: absolute;
             border: 2px solid #fff;
+            transition: .4s all ease;
+        }
+        .play_btn:hover{
+            transform: scale(1.1);
         }
         .rightSide button{
             position: absolute;
@@ -896,3 +880,107 @@ footer{
         footer ul li:nth-child(1){
             border: none;
         }
+
+
+@media screen and (max-width: 450px){
+    /* header *{
+        border: 2px solid red;
+    } */
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+    .sec1Div article h1{
+        font-size: 36px;
+    }
+    header{
+        max-width: 450px;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        left: 0;
+    }
+    .logo_side{
+        min-width: 300px;
+        justify-content: flex-start !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+        .nav_elements{
+            width: 100% !important;
+        }
+            .nav_elements ul{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 0;
+            }
+            .callUs{
+                flex-direction: column;
+                width: 100% !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 10px;
+            }
+        #hamburger{
+            position: absolute;
+            display: flex;
+            width: 20px;
+            height: 12;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 5px;
+            cursor: pointer;
+            right: 0;
+            border: none;
+        }
+            #hamburger li{
+                width: 100%;
+                height: 2px;
+                background: #fff;
+            }
+    
+    .nav_elements{
+        display: none;
+    }
+    .callUs{
+        display: none !important;
+    }
+    
+    
+    .weUnderstand .mainContainer .upperSide{
+        display: none;
+    }
+    .weUnderstand .mainContainer .middleSide{
+        border: 2px solid orange;
+        margin-bottom: 30px;
+    }
+    .weUnderstand .mainContainer .bottomSide div{
+        border: 2px solid green;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .weUnderstand .mainContainer .bottomSide .thirdText{
+        order: 3;
+    }
+
+    .texts{
+        flex-direction: column;
+    }
+     .texts div{
+        margin-top: 40px;
+        width: 100%;
+     }
+
+     .texts div:nth-child(3){
+        margin-bottom: 40px;
+     }
+}

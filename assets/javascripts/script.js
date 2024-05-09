@@ -167,3 +167,13 @@ window.onresize = function(){
     document.querySelector('.columnGreen').style.transform = `translateX(${px - 1440}px)`
     document.querySelector('.videoColumn').style.transform = `translateX(${px - 1440}px)`
 }
+
+
+
+
+document.querySelector('.rihtSideButton').addEventListener('mouseenter', function(){
+    document.querySelector('.play_btn').style.transform = "scale(1.1)"
+})
+document.querySelector('.rihtSideButton').addEventListener('mouseleave', function(){
+    document.querySelector('.play_btn').style.transform = "scale(1)"
+})
