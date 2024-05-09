@@ -175,3 +175,22 @@ document.querySelector('.rihtSideButton').addEventListener('mouseenter', functio
 document.querySelector('.rihtSideButton').addEventListener('mouseleave', function(){
     document.querySelector('.play_btn').style.transform = "scale(1)"
 })
+
+
+// Showing video
+
+document.querySelector('.rihtSideButton').addEventListener('click', function(){
+    document.querySelector('.videoSection').style.display = "flex"
+    document.querySelector('#video').style.display = "flex"
+    setTimeout(function(){
+        document.querySelector('#video').play()
+    },500)
+    document.querySelector('body').style.overflow = "hidden"
+})
+
+document.querySelector('.videoSection span').addEventListener('click', function(){
+    document.querySelector('.videoSection').style.display = "none"
+    document.querySelector('#video').style.display = "none"
+    document.querySelector('#video').pause()
+    document.querySelector('body').style.overflow = "hidden"
+})
