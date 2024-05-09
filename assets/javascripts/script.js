@@ -51,17 +51,17 @@ var swiperightButton = document.querySelector('.swipe_right')
 
 var contexts = [
     {
-        name: "Abbie Harvey",
+        name: "Alice Cendy",
         text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.",
-        image: "./assets/images/column.png"
+        image: "./assets/images/alice.png"
     },
     {
-        name: "Mahammad Abbasov",
-        text: "I am mahammad Abbasov",
-        image: "./assets/images/column.png"
+        name: "Alex Askarov",
+        text: "I am Alex Askarov",
+        image: "./assets/images/max.png"
     },
     {
-        name: "Ali Huseynov",
+        name: "Abbie Harvey",
         text: "I am ali huseynov",
         image: "./assets/images/natali2.png"
     }
@@ -148,3 +148,22 @@ swiperightButton.addEventListener('click', function(){
     activeButtons[count].classList.add('activeDiv')
 })
 
+document.querySelector('.swipe_left').addEventListener('mouseenter', function(){
+    this.querySelector('img').src = "./assets/images/hoverSwipe.png"
+})
+document.querySelector('.swipe_left').addEventListener('mouseleave', function(){
+    this.querySelector('img').src = "./assets/images/swipe_left.svg"
+})
+
+document.querySelector('.swipe_right').addEventListener('mouseenter', function(){
+    this.querySelector('img').src = "./assets/images/hoverSwipeRight.png"
+})
+document.querySelector('.swipe_right').addEventListener('mouseleave', function(){
+    this.querySelector('img').src = "./assets/images/swipe_right.png"
+})
+
+window.onresize = function(){
+    var px = window.innerWidth
+    document.querySelector('.columnGreen').style.transform = `translateX(${px - 1440}px)`
+    document.querySelector('.videoColumn').style.transform = `translateX(${px - 1440}px)`
+}

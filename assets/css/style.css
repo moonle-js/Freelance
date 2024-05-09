@@ -731,6 +731,7 @@ header{
 }
 
 .videoSec{
+    position: relative;
     width: 100%;
     height: 650px;
     background: var(--background);
@@ -739,7 +740,10 @@ header{
     align-items: center;
 }
     .videoSec .leftSide{
-        width: 45%;
+        z-index: 3;
+        width: 60%;
+        padding-left: 5%;
+        background: var(--background);
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -793,20 +797,24 @@ header{
 
 
     .videoSec .rightSide{
-        width: 45%;
+        z-index: 1;
+        width: 55%;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid red;
         height: 100%;
+        background: url(../images/videoback.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
         .play_btn{
             width: 208px;
             height: 208px;
             border-radius: 100%;
             background: var(--interactive);
-            opacity: .1;
+            opacity: .2;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -827,11 +835,64 @@ header{
             align-items: center;
 
         }
-
+.videoColumn,
+.columnGreen{
+    position: absolute;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../images/videocolumn.png);
+    max-width: 779px;
+    width: 65%;
+    z-index: 2;
+    left: 12%;
+    height: 100%;
+}
+.columnGreen{
+    left: 11%;
+    z-index: 2;
+    background: url(../images/column_green.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
         .rightSide button img{
             background: var(--interactive);
             background-clip: content-box;
             border: none;
             outline: none;
             text-decoration: none;
+        }
+
+
+/* footer */
+footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+    footer span,
+    footer ul{
+        width: 45%;
+        font-size: 14px;
+        color: #757575;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer span{
+        justify-content: flex-start;
+    }
+    footer ul{
+        justify-content: flex-end;
+        column-gap: 12px;
+    }
+        footer ul li{
+            border-left: 1px solid var(--mainText);
+            padding-left: 10px;
+        }
+        footer ul li:nth-child(1){
+            border: none;
         }
